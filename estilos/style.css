@@ -1,0 +1,278 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+header{
+  background-color: #BBBBBB;
+  padding: 20px 0;
+}
+.caja{
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+nav{
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+nav li{
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a{
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+  color: rgb(163, 122, 19);
+}
+
+.productos{
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.productos li{
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.productos li:hover{
+   border: 4px solid rgb(163, 122, 19) ;
+}
+.productos li:active{
+  border: 4px solid green;
+}
+
+.productos h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.productos li:hover h2{
+  font-size: 33px;
+}
+.producto-descripcion{
+  font-size: 18px;
+}
+.producto-precio{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer{
+  background: url(../img/bg.jpg);
+  text-align: center;
+  padding: 40px;
+}
+footer img{
+  display: inline-block;
+  
+}
+.copyright{
+  color: white;
+  font-size: 13px;
+  margin: 20px;
+}
+
+form{
+  margin: 40px 0;
+}
+
+form label, form legend{
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.input-padron{
+  display: block;
+  margin: 20px auto;
+  padding: 10px 25px;
+  font-size: 20px;
+  width: 50%;
+}
+.checkbox{
+  margin: 20px 0;
+}
+
+.fieldset-contacto{
+  margin: 30px auto;
+  text-align: center;
+  
+}
+select{
+  
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  
+}
+
+.enviar{
+  width: 40%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: orange;
+  border: none;
+  border-radius: 10px;
+  transition: 1s all;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  left: 30%;
+
+}
+
+.enviar:hover{
+  background-color: darkorange;
+  transform: scale(1.1);
+}
+
+table{
+  margin: 20px auto;
+}
+thead{
+  background: #555555;
+  color: #BBBBBB;
+  font-weight: bold;
+}
+td,th{
+  border: 1px solid black;
+  padding: 8px 15px;
+}
+
+/*                           || CSS para nuestro home  ||                      */
+
+.banner{
+  width: 100%;
+}
+.principal{
+  background-color: #fefefe;
+  padding: 3em 0;
+  width: 940px;
+  margin: 0 auto;
+}
+.titulo-principal{
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+
+.principal p{
+  margin: 0 0 1em;
+}
+
+.principal strong{
+  font-weight: bold;
+}
+.principal em{
+  font-style: italic;
+}
+.utensilios{
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.mapa{
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p{
+  text-align: center;
+  margin: 0 0 2em;
+}
+.mapa-contenido{
+  width: 940px;
+  margin: 0 auto;
+}
+.diferenciales{
+  background-color: #888888;
+  padding: 3em 0;
+  
+}
+.contenido-diferenciales{
+ width: 640px;
+ margin: 0 auto;
+}
+
+.lista-diferenciales{
+  width: 40%;
+  display: inline-block;
+  vertical-align: top; 
+}
+.items{
+line-height: 1.5;
+}
+
+.items::before{
+  content: "★";
+}
+.items:first-child{
+  font-weight: bold;
+}
+.imagen-diferenciales{
+  width: 60%;
+  box-shadow: 10px 10px 30px 15px #000000;
+  transition: 400ms all;
+}
+.imagen-diferenciales:hover{
+  opacity: 0.3;
+}
+
+.video{
+  width: 560px;
+  margin: 1em auto;
+}
+@media screen and (max-width:480px) {
+    h1{
+      text-align: center;
+    }
+    nav{
+      position: static;
+    }
+    nav a{
+      font-size: 18px;
+    }
+
+    .productos li{
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+
+    .principal p{
+      margin: 0 1em 1em 1em;
+    }
+  .caja , .principal, .productos, .mapa-contenido,.contenido-diferenciales, .video {
+    width: auto;
+  }
+  .lista-diferenciales, .imagen-diferenciales {
+    width: 100%;
+  }
+  .items{
+    margin-left: 1em;
+  }
+}
